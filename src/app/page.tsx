@@ -1,3 +1,5 @@
+"use client";
+
 import { PaymentValidation } from "@/components/PaymentValidation";
 
 export default function Home() {

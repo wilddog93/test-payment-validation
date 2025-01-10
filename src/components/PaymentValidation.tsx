@@ -31,8 +31,7 @@ export const PaymentValidation = () => {
     return !isFormValid.cardNumber || !isFormValid.name || !isFormValid.month || !isFormValid.year || !isFormValid.cvv;
   }, [isFormValid]);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const onChange = (e: any) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
